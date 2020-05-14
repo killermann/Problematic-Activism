@@ -1,0 +1,276 @@
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+.alt-font {
+  font-family: sofia-pro-condensed, sans-serif;
+  font-weight: bold;
+}
+
+.leading-title {
+  line-height: 1.1;
+}
+
+.wrap {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.type-wrap {
+  max-width: 33em;
+}
+
+.disabled {
+  color: rgba(0,0,0,.65);
+}
+
+.disabled:hover {
+  color: rgba(0,0,0,.65) !important;
+  cursor: not-allowed;
+}
+
+.not-yet-available {
+  position: relative;
+}
+
+  .not-yet-available:hover:after {
+    content: "Not available yet. Join the mailing list to get an email when it is.";
+    position: absolute;
+    display: block;
+    bottom: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    font-size: .75rem;
+    padding: .75rem;
+    border-radius: 7px;
+    z-index:9999;
+    line-height: 1.2;
+    text-align: center;
+    animation: slide-up .2s ease-out;
+  }
+
+@keyframes slide-up {
+    0% { opacity: 0; transform: translateY(100%); }   
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Generated with Bounce.js. Edit at http://bouncejs.com#%7Bs%3A%5B%7BT%3A%22c%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A0%2Cf%3A%7Bx%3A0%2Cy%3A1%7D%2Ct%3A%7Bx%3A1%2Cy%3A1%7D%2Cs%3A1%2Cb%3A4%7D%2C%7BT%3A%22c%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A0%2Cf%3A%7Bx%3A1%2Cy%3A0%7D%2Ct%3A%7Bx%3A1%2Cy%3A1%7D%2Cs%3A1%2Cb%3A6%7D%5D%7D */
+
+@keyframes jelly { 
+  0% { transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.4% { transform: matrix3d(0.316, 0, 0, 0, 0, 0.407, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.7% { transform: matrix3d(0.45, 0, 0, 0, 0, 0.599, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.81% { transform: matrix3d(0.659, 0, 0, 0, 0, 0.893, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.41% { transform: matrix3d(0.883, 0, 0, 0, 0, 1.168, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  10.21% { transform: matrix3d(0.942, 0, 0, 0, 0, 1.226, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.61% { transform: matrix3d(1.123, 0, 0, 0, 0, 1.332, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.11% { transform: matrix3d(1.141, 0, 0, 0, 0, 1.331, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.52% { transform: matrix3d(1.208, 0, 0, 0, 0, 1.239, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.72% { transform: matrix3d(1.212, 0, 0, 0, 0, 1.187, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  21.32% { transform: matrix3d(1.196, 0, 0, 0, 0, 1.069, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.32% { transform: matrix3d(1.151, 0, 0, 0, 0, 0.96, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { transform: matrix3d(1.134, 0, 0, 0, 0, 0.938, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.03% { transform: matrix3d(1.063, 0, 0, 0, 0, 0.897, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.93% { transform: matrix3d(1.048, 0, 0, 0, 0, 0.899, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  35.54% { transform: matrix3d(0.979, 0, 0, 0, 0, 0.962, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  36.74% { transform: matrix3d(0.972, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  41.04% { transform: matrix3d(0.961, 0, 0, 0, 0, 1.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  44.44% { transform: matrix3d(0.966, 0, 0, 0, 0, 1.032, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% { transform: matrix3d(0.991, 0, 0, 0, 0, 1.006, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  59.86% { transform: matrix3d(1.006, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  63.26% { transform: matrix3d(1.007, 0, 0, 0, 0, 0.992, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  75.28% { transform: matrix3d(1.001, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  85.49% { transform: matrix3d(0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  90.69% { transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+
+
+
+/******************************
+
+    BUTTON STYLES
+
+******************************/
+
+.btn {
+  box-shadow: 0px .1em .2em rgba(0,0,0,.5);
+  @apply border-red-500 bg-red-500 text-yellow-200 leading-none alt-font tracking-widest py-3 px-6 block text-center rounded-lg;
+  border-width: .15em;
+}
+
+.btn:hover, .btn:focus {
+  @apply bg-red-600 border-red-600 text-white;
+  box-shadow: 0px .1em .6em rgba(0,0,0,.25);
+}
+
+.btn-secondary {
+  @apply bg-transparent border-teal-600 text-teal-600;
+  box-shadow: none;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  @apply bg-teal-600 border-teal-600 text-white;
+}
+
+.btn-tertiary {
+  @apply bg-transparent shadow-none border-none py-3 rounded tracking-widest alt-font; 
+}
+
+.btn-tertiary:hover, .btn-tertiary:focus {
+  @apply text-red-500 shadow-none bg-transparent;
+}
+
+
+/******************************
+
+    CHAPTER STYLES
+
+******************************/
+
+
+
+/******************************
+
+    MARKDOWN CMS STYLES
+
+******************************/
+
+.markdown {
+  @apply leading-normal break-words font-serif;
+}
+
+.markdown > * + * {
+  @apply mt-0 mb-4;
+}
+
+.markdown li + li {
+  @apply mt-1;
+}
+
+.markdown li > p + p {
+  @apply mt-6;
+}
+
+.markdown strong {
+  @apply font-black;
+}
+
+.markdown a {
+  @apply underline;
+}
+
+.markdown a:hover, .markdown a:focus {
+  color: black;
+  text-decoration-color: red;
+}
+
+.markdown strong a {
+  @apply font-black;
+}
+
+.markdown h1 {
+  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h2 {
+  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h3 {
+  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+}
+
+.markdown h4 {
+  @apply leading-none text-base font-semibold mb-4 mt-6;
+}
+
+.markdown h5 {
+  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+}
+
+.markdown h6 {
+  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+}
+
+.markdown hr {
+  border: none;
+  margin: 2em auto;
+  height: 1em;
+}
+
+.markdown hr::before {
+  content: '***';
+  display: block;
+  text-align: center;
+}
+
+.markdown > p:first-of-type {
+  font-size: 1.2em;
+  font-weight: bolder;
+  @apply mb-4;
+}
+
+hr + p::first-letter{
+  font-size: 3em;
+  float: left;
+  margin: 0 .2em 0 0;
+  line-height: 1;
+}
+
+.markdown blockquote {
+  @apply text-base border-l-4 border-yellow-500 pl-4 pr-4 mt-4 font-sans;
+}
+
+.markdown blockquote p + p {
+  @apply mt-4;
+}
+.markdown code {
+  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-1;
+}
+
+.markdown pre {
+  @apply bg-gray-100 rounded p-4;
+}
+
+.markdown pre code {
+  @apply block bg-transparent p-0 overflow-visible rounded-none;
+}
+
+.markdown ul {
+  @apply text-base pl-8 list-disc;
+}
+
+.markdown ol {
+  @apply text-base pl-8 list-decimal;
+}
+
+.markdown kbd {
+  @apply text-xs inline-block rounded border px-1 py-1 align-middle font-normal font-mono shadow;
+}
+
+.markdown table {
+  @apply text-base border-gray-600;
+}
+
+.markdown th {
+  @apply border py-1 px-3;
+}
+
+.markdown td {
+  @apply border py-1 px-3;
+}

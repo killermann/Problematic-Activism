@@ -1,0 +1,25 @@
+baseURL = "https://problematicactivism.com/"
+languageCode = "en-us"
+title = "Problematic Activism"
+enableRobotsTXT = true
+canonifyURLs = true
+summaryLength = 40
+enableGitInfo = true
+theme = "seostarter"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+	email_list_url = "https://app.convertkit.com/landing_pages/402557?v=7"
+	seo_title = "Problematic Activism by Sam Killermann: Transitioning from Disposability & Dogma to Living Social Justice"
+	seo_description = "A book about all the barriers we're constructing in our own ways, and what we can do about them."
+	og_image = ""
+	logo = "favicon-96x96.png"
+	facebook = ""
+	twitter = ""
+	instagram = ""
+	github = ""
+

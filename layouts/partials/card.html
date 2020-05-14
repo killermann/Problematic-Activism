@@ -1,0 +1,17 @@
+<article class="rounded relative overflow-hidden flex flex-col">
+	<header>
+		{{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+		{{ with $img }}
+		{{ $big := $img.Resize "1400x"}}
+		{{ $small := $img.Resize "600x"}}
+			<img class="rounded-sm mb-2" srcset="{{ $small.RelPermalink }} 500w, {{ $big.RelPermalink }} 1200w" alt="{{ $img.Title }}" />
+		{{ end }}
+		<div>
+			{{with .Params.weight }}<h4 class="text-xs mb-1 leading-none opacity-75">Chapter {{ . }}</h4>{{ end}}
+			<h3 class="alt-font text-lg md:text-2xl leading-title">
+			{{ .Title }}
+			</h3>
+		</div>
+	</header>
+	<a href="{{ .Permalink }}#content" class="absolute bottom-0 left-0 right-0 top-0"><span class="sr-only">Read {{ .Title }}</span></a>
+</article>
