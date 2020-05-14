@@ -1,11 +1,10 @@
-const themeDir = __dirname + '../';
+const themeDir = __dirname + '/../../';
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
     // Specify the paths to all of the template files in your project
     content: [
         themeDir + 'layouts/**/*.html',
-        themeDir + 'exampleSite/content/**/*.html',
         'layouts/**/*.html',
         'content/**/*.html',
     ],
