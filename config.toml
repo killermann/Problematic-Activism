@@ -5,7 +5,6 @@ enableRobotsTXT = true
 canonifyURLs = true
 summaryLength = 40
 enableGitInfo = true
-theme = "seostarter"
 
 [markup]
   [markup.goldmark]

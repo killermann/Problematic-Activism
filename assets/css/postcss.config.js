@@ -1,4 +1,4 @@
-const themeDir = __dirname + '/';
+const themeDir = __dirname + '../';
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
 

@@ -1,0 +1,9 @@
+<title>{{- block "title" . }}
+	{{- if .IsHome }}
+		{{- .Site.Params.seo_title | default .Site.Title }}
+	{{- else if .Params.seo_title }}
+		{{ .Params.seo_title }}
+	{{- else }}
+		{{ .Title }} | {{ .Site.Title }}
+	{{ end }}{{ end }}</title>
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.seo_description | default .Description }}{{ else if .Params.seo_description }}{{ .Params.seo_description }}{{ else if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary }}{{ end }}">
