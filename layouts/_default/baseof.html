@@ -8,21 +8,23 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
 	{{ hugo.Generator }}
 	<meta name="ROBOTS" content="INDEX, FOLLOW">
-{{- if .Site.IsServer }}
-	{{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}" data> 
-{{- else }}
-	{{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"> 
-	{{ template "_internal/google_analytics_async.html" . }}
-{{ end -}}
-{{ block "favicon" . }}
+	
+	{{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+	{{ if .Site.IsServer }}
+	<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+	{{- else -}}
+	{{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
+	<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+	{{ end -}}
+	
+	{{ block "favicon" . }}
 	{{ partial "site-favicon.html" . }}
-{{ end }}
-{{- if .OutputFormats.Get "RSS" }}
+	{{ end }}
+
+	{{- if .OutputFormats.Get "RSS" }}
 	<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 	<link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-{{ end }}
+	{{ end }}
 	<link rel="stylesheet" href="https://use.typekit.net/zcp7vwm.css">
 </head>
 
