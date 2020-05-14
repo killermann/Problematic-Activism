@@ -6,7 +6,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     content: [
         themeDir + 'layouts/**/*.html',
         'layouts/**/*.html',
-        'content/**/*.html',
+        'public/**/*.html',
     ],
 
     // This is the function used to extract class names from your templates
