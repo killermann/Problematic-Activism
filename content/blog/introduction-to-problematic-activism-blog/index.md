@@ -2,7 +2,7 @@
 title: Intro to the Problematic Activism Blog
 date: 2020-07-13T23:17:51.910693
 seo_title: What is the Problematic Activism Blog?
-description: "This is a blog about social justice activism gone wrong, in real-time, as it's happening — from \"social justice dogma\" to \"wokeism\" to \"cancel culture\" to \"oppression olympics\" — and what we can do instead. So, what's that mean?"
+description: "A blog about social justice activism gone awry, in real-time, as it's happening — from dogma to \"wokeism\" to \"cancel culture\"— and what we can do instead."
 author: Sam Killermann
 categories: "Meta"
 ---

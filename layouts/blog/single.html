@@ -8,14 +8,14 @@
 	<div class="max-w-2xl mx-auto lg:ml-0 xl:mr-8">
 		<header class="px-6">
       <nav class="breadcrumbs uppercase text-sm font-black text-red-500 mb-3 tracking-widest leading-none" aria-label="Breadcrumb">
-          <a href="{{ .Site.BaseURL }}/blog/" title="Blog">blog</a>
+          <a href="{{ .Site.BaseURL }}/blog/#content" title="Blog">blog</a>
           {{- with .Params.categories }} / <a class="primary-category" href="{{ `/categories/` }}{{ . | urlize }}/" title="">{{ . }}</a>{{ end }}
       </nav>
 			<h1 class="font-black text-5xl leading-title alt-font mb-4">
 				{{- .Title -}}
 			</h1>
 			{{- with .Description }}
-			<p class="text-lg opacity-75  mb-6">
+			<p class="text-lg opacity-75 mb-6">
 				{{ . }}
 			</p>
 			{{ end -}}
