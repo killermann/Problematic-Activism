@@ -183,28 +183,37 @@ html {
   @apply font-black;
 }
 
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply alt-font font-black;
+}
+
 .markdown h1 {
-  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight border-b text-4xl mb-4 mt-6 pb-2;
 }
 
 .markdown h2 {
-  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight border-b-2 border-dashed text-4xl mb-4 pt-6 pb-2;
 }
 
 .markdown h3 {
-  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+  @apply leading-snug text-2xl mb-4 mt-6 opacity-75;
 }
 
 .markdown h4 {
-  @apply leading-none text-base font-semibold mb-4 mt-6;
+  @apply leading-none text-lg mb-4 mt-6;
 }
 
 .markdown h5 {
-  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+  @apply leading-tight text-sm mb-4 mt-6;
 }
 
 .markdown h6 {
-  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+  @apply leading-tight text-sm text-gray-600 mb-4 mt-6;
 }
 
 .markdown hr {

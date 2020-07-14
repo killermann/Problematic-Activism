@@ -3,6 +3,7 @@ title: Is this book for you?
 excerpt: If you're one of these people, I'm writing this for you.
 author: Sam Killermann
 weight: 3
+draft: true
 ---
 
 Seeing as how in the past four weeks I've [written and published over 300 pages of a book-in-progress](https://hues.ck.page/353dcc23a0), you'd think I would have, at some point, mentioned for whom I'm doing all this writing. If it surprises you that I haven't -- well, ditto. Let's remedy this together.

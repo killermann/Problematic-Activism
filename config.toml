@@ -3,8 +3,8 @@ languageCode = "en-us"
 title = "Problematic Activism"
 enableRobotsTXT = true
 canonifyURLs = true
-summaryLength = 40
 enableGitInfo = true
+summaryLength = 40
 
 [markup]
   [markup.goldmark]
@@ -21,4 +21,3 @@ enableGitInfo = true
 	twitter = ""
 	instagram = ""
 	github = ""
-

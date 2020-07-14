@@ -3,6 +3,7 @@ title: The Time's Never Right
 excerpt: Again and again, I've postponed talking about aspects of social justice dogma. It's left me feeling rotten.
 author: Sam Killermann
 weight: 2
+draft: true
 ---
 
 For the past few days, I've been thinking about this Martin Luther King [quote](https://www.brainyquote.com/quotes/martin_luther_king_jr_106169) that gets shared a lot:

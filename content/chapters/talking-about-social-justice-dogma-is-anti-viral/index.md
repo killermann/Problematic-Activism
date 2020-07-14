@@ -3,6 +3,7 @@ title: Talking about Social Justice Dogma is Anti-Viral
 author: Sam Killermann
 excerpt: For over two years now I've been publicly writing and talking about social justice dogma. I've noticed the weirdest thing.
 weight: 5
+draft: true
 ---
 
 I've been [working on the internet](/categories/work-dot-com) for about a decade now, but I hadn't encountered this before.

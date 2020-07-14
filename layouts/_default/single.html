@@ -1,40 +1,65 @@
 {{ define "header" }}
 {{/* We can override any block in the baseof file be defining it in the template */}}
-{{ partial "full-header.html" . }}
+{{ partial "blog-header.html" . }}
 {{ end }}
 
 {{ define "main" }}
-{{ $section := .Site.GetPage "section" .Section }}
-<article>
-
-	<header>
-		<p>
-			{{/*
-			CurrentSection allows us to use the section title instead of inferring from the folder.
-			https://gohugo.io/variables/page/#section-variables-and-methods
-			*/}}
-			{{with .CurrentSection.Title }}{{. | upper }}{{end}}
-		</p>
-		<h1>
-			{{- .Title -}}
-		</h1>
-		{{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
-		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-			{{- .Date.Format "January 2, 2006" -}}
-		</time>
-	</header>
-
-	<section>
-		{{- .Content -}}
-		{{- partial "tags.html" . -}}
-		<div>
-			{{ template "_internal/disqus.html" . }}
-		</div>
-	</section>
-
-	<aside>
-		{{- partial "menu-contextual.html" . -}}
+<article id="content" class="py-8 lg:flex wrap lg:px-6 xl:p-12">
+	<div class="max-w-2xl mx-auto lg:ml-0 xl:mr-8">
+		<header class="px-6">
+			<div class="uppercase text-sm font-black mb-3 tracking-widest leading-none">
+				<a class="text-red-500" href="/{{ .Section | lower }}/" title="All {{ with .CurrentSection.Title }}{{ . | title }}{{ else }}{{ .CurrentSection }}{{ end }} Posts">{{ with .CurrentSection.Title }}{{ . | title }}{{ else }}{{ .CurrentSection }}{{ end }}</a>
+			</div>
+			<h1 class="font-black text-5xl leading-title alt-font mb-4">
+				{{- .Title -}}
+			</h1>
+			{{- with .Description }}
+			<p class="text-lg opacity-75  mb-6">
+				{{ . }}
+			</p>
+			{{ end -}}
+			<div class="mb-6 font-black opacity-75 uppercase leading-none tracking-widest text-sm">
+				<span>
+					{{ .Params.author }}
+				</span>
+				<span>
+					&mdash;
+				</span>
+				<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+					{{- .Date.Format "Jan. 2, 2006" -}}
+				</time>
+			</div>
+			
+			<div class="mb-6">
+				{{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+				{{ if $img }}
+					{{ $big := $img.Resize "1400x"}}
+					{{ $small := $img.Resize "600x"}}
+					<img class="rounded-sm" srcset="{{ $small.RelPermalink }} 500w, {{ $big.RelPermalink }} 1200w" alt="{{ $img.Title }}" />
+				{{ else }}
+				<hr/>
+				{{ end }}
+			</div>
+		</header>
+		<section class="px-6 markdown mx-auto lg:mr-0 lg:ml-auto type-wrap">
+			{{- .Content -}}	
+		</section>
+		<footer class="px-6 mt-6 markdown mx-auto lg:mr-0 lg:ml-auto type-wrap">
+			{{ if ( or .NextInSection .PrevInSection) }}
+			<hr/>
+			<div class="flex items-center justify-between">
+				{{ if .NextInSection }}
+				<a class="alt-font uppercase text-sm tracking-widest" href="{{.NextInSection.Permalink}}#content">&larr; Previous Chapter</a>
+				{{ else }}&nbsp;
+				{{ end }}{{ if .PrevInSection }}
+				<a class="alt-font uppercase text-sm tracking-widest" href="{{.PrevInSection.Permalink}}#content">Next Chapter &rarr;</a>
+				{{ end }}
+			</div>
+			{{ end }}
+		</footer>
+	</div>
+	<aside class="mx-auto max-w-2xl xl:pl-8 lg:max-w-xs">
+		{{ partial "chapter-resources.html" .  }}
 	</aside>
-
 </article>
 {{ end }}

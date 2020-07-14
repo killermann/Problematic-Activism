@@ -2,26 +2,22 @@
 <section class="wrap py-8 lg:flex lg:px-6 xl:p-12">
   <div class="px-6 max-w-2xl mx-auto lg:ml-0 xl:mr-8">
     <h1 class="alt-font leading-none uppercase tracking-widest opacity-75 text-5xl md:text-6xl">
-      {{ .Title }}
+      ⚠️ The Blog
     </h1>
-    
+    {{ with .Content }}
     <div class="mt-6 text-sm">
-			{{ with .Content }}
-				{{- . -}}
-			{{ else }}
-			<p>Below you will find posts that fall into the bucket of “{{ .Title }}”</p>
-			{{ end }}
+      {{- . -}}
     </div>
-   
+    {{ end }}
 
     <div class="">
-      {{ range .Pages }}
+      {{ range .Paginator.Pages }}
         {{- partial "posts.html" . -}}
       {{ end }}
     </div>
 
   </div>
-  <aside id="subscribe-to-the-blog" class="mx-auto max-w-2xl xl:pl-8 lg:max-w-xs">
+  <aside class="mx-auto max-w-2xl xl:pl-8 lg:max-w-xs">
     {{ partial "blog-resources.html" . }}
   </aside>
 	

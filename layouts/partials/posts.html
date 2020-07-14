@@ -1,0 +1,34 @@
+<article class="relative flex flex-col mt-12 pt-10 border-dashed border-color-grey border-t-4">
+	<header>
+    <h1 class="font-black text-5xl leading-title alt-font mb-4">
+      {{- .Title -}}
+    </h1>
+    {{- with .Description }}
+    <p class="text-lg opacity-75  mb-6">
+      {{ . }}
+    </p>
+    {{ end -}}
+    <div class="mb-6 font-black opacity-75 uppercase leading-tight tracking-widest text-sm">
+      <span class="inline-block">
+        {{ .Params.author }}
+      </span>
+      &nbsp;|&nbsp;
+      <time class="inline-block" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{- .Date.Format "Jan. 2, 2006" -}}
+      </time>
+      &nbsp;|&nbsp;
+      <span class="inline-block">{{ .ReadingTime }} min. read</span>
+    </div> 
+    {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ with $img }}
+      {{ $big := $img.Resize "1400x"}}
+      {{ $small := $img.Resize "600x"}}
+      <img class="rounded-sm mb-4" srcset="{{ $small.RelPermalink }} 500w, {{ $big.RelPermalink }} 1200w" alt="{{ $img.Title }}" />
+    {{ end }}
+  </header>
+  <section class="markdown mb-4">
+    {{ .Summary }}
+  </section>
+  <a href="{{ .Permalink }}#content" class="absolute bottom-0 left-0 right-0 top-0"><span class="sr-only">Read {{ .Title }}</span></a>
+  <a class="text-sm font-black tracking-widest uppercase" href="{{ .Permalink }}#content">Keep reading &rarr;</a>
+</article>
