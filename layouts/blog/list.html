@@ -1,16 +1,16 @@
 {{ define "main" }}
-<section class="wrap py-8 lg:flex lg:px-6 xl:p-12">
+<section id="the-blog" class="wrap py-8 lg:flex lg:px-6 xl:p-12">
   <div class="px-6 max-w-2xl mx-auto lg:ml-0 xl:mr-8">
-    <h1 class="alt-font leading-none uppercase tracking-widest opacity-75 text-5xl md:text-6xl">
+    <h1 class="alt-font leading-none uppercase tracking-widest text-yellow-600 text-5xl md:text-6xl">
       ⚠️ The Blog
     </h1>
     {{ with .Content }}
-    <div class="mt-6 text-sm">
+    <div class="mt-6 opacity-75 text-xl">
       {{- . -}}
     </div>
     {{ end }}
 
-    <div class="">
+    <div id="latest-posts" class="">
       {{ range .Paginator.Pages }}
         {{- partial "posts.html" . -}}
       {{ end }}
