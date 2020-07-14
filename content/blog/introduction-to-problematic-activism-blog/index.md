@@ -7,7 +7,7 @@ author: Sam Killermann
 categories: "Meta"
 ---
 
-Why a another blog, in addition to [the book](https://problematicactivism.com)? Why now? Why should you read this, and why in the hell would I want to take the time to write it? Or to step into the internet Hellmouth that writing it necessitates?
+Why another blog, in addition to [the book](https://problematicactivism.com)? Why now? Why should you read this, and why in the hell would I want to take the time to write it? Or to step into the internet Hellmouth that writing it necessitates?
 
 These are all the questions I was asking myself this past weekend, as this idea started to materialize.
 
