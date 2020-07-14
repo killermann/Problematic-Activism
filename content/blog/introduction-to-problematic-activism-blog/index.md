@@ -129,4 +129,16 @@ I reserve the right to change these rules whenever I want, if I think it will be
 
 And you, of course, may reserve the right to peace tf out of here and never come back if you don't dig what I'm doing. 
 
-But I hope you'll stick around. If so, I'll be writing another post for you on Wednesday.
+But I hope you'll stick around. If so, I'll be writing another post for you on Thursday.
+
+## Start a Conversation
+
+If you read along, even if you just read this intro, I hope you'll use this blog as a starting place for a conversation with people in your real life (social distancing permitting, of course). 
+
+Text a friend about something I shared here, call a colleague or classmate, post an open question on social media asking for input from social justice people in your life.
+
+Social justice dogma is spreading like a virus, but any conversations about it are stunted. One of the first essays I wrote for the _Problematic Activism_ book was about how [talking about social justice dogma is anti-viral](https://www.samk.blog/talking-about-social-justice-dogma-is-anti-viral/).  I still believe this to be the case, in both senses of the phrase: 
+
+It's hard to start a conversation about dogma, that's true. It's also true that as soon as you do, you take away some of its power. 
+
+Conversation got us into this. It has the power to get us out.

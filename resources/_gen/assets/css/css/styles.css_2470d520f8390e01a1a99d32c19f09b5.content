@@ -1010,11 +1010,21 @@ html {
   font-weight: 900;
 }
 
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: sofia-pro-condensed, sans-serif;
+  font-weight: bold;
+  font-weight: 900;
+}
+
 .markdown h1 {
   line-height: 1.25;
   border-bottom-width: 1px;
   font-size: 2.25rem;
-  font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
   padding-bottom: 0.5rem;
@@ -1022,26 +1032,25 @@ html {
 
 .markdown h2 {
   line-height: 1.25;
-  border-bottom-width: 1px;
-  font-size: 1.5rem;
-  font-weight: 600;
+  border-bottom-width: 2px;
+  border-style: dashed;
+  font-size: 2.25rem;
   margin-bottom: 1rem;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
 .markdown h3 {
   line-height: 1.375;
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+  opacity: 0.75;
 }
 
 .markdown h4 {
   line-height: 1;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.125rem;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 }
@@ -1049,7 +1058,6 @@ html {
 .markdown h5 {
   line-height: 1.25;
   font-size: 0.875rem;
-  font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 }
@@ -1057,7 +1065,6 @@ html {
 .markdown h6 {
   line-height: 1.25;
   font-size: 0.875rem;
-  font-weight: 600;
   --text-opacity: 1;
   color: #706e69;
   color: rgba(112, 110, 105, var(--text-opacity));
