@@ -1,18 +1,26 @@
-{{ define "header" }}{{ partial "full-header.html" . }}{{ end }}
+{{ define "header" }}
+	{{ if eq .Params.header "blog"}}
+		{{ partial "blog-header.html" . }}
+	{{ else if eq .Params.header "full" }}
+		{{ partial "full-header.html" . }}
+	{{ else }}
+		{{ partial "full-header.html" . }}
+	{{ end }}
+{{ end }}
 {{ define "main" }}
-<div>
-	<article>
-		<header>
-			<p>
-				{{ humanize .Section | upper }}
-			</p>
-			<h1>
+
+<article id="content" class="py-8 lg:px-12 mx-auto">
+	<div class="xl:px-6">
+		<header class="type-wrap">
+			<h1 class="font-black text-5xl leading-title alt-font mb-6">
 				{{ .Title }}
 			</h1>
 		</header>
-		<div>
+		<section class="type-wrap markdown">
 			{{ .Content }}
-		</div>
-	</article>
-</div>
+		</section>
+	</div>
+	
+</article>
+
 {{ end }}

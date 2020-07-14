@@ -9,13 +9,11 @@
       {{- . -}}
     </div>
     {{ end }}
-
     <div id="latest-posts" class="">
       {{ range .Paginator.Pages }}
         {{- partial "posts.html" . -}}
       {{ end }}
     </div>
-
   </div>
   <aside class="mx-auto max-w-2xl xl:pl-8 lg:max-w-xs">
     {{ partial "blog-resources.html" . }}
