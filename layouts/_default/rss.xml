@@ -31,7 +31,7 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <dc:creator>Sam Killermann</dc:creator>
-      <description>{{ `<![CDATA[` | safeHTML }}<p>{{ if .Params.description }}{{ .Params.description | safeHTML }}{{ end }}</p>
+      <description>{{ `<![CDATA[` | safeHTML }}{{ if .Params.description }}<p style="font-size:1.318em; font-weight:black;">{{ .Params.description | safeHTML }}</p>{{ end }}
       {{- $img := (.Resources.ByType "image").GetMatch "*featured*" -}}
 			{{- if or ( .Params.featured_image) ($img) }}
       <p><a href="{{ .Permalink }}" title="{{ .Title }}">
