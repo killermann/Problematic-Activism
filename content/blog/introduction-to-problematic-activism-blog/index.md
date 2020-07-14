@@ -137,8 +137,8 @@ If you read along, even if you just read this intro, I hope you'll use this blog
 
 Text a friend about something I shared here, call a colleague or classmate, post an open question on social media asking for input from social justice people in your life.
 
-Social justice dogma is spreading like a virus, but any conversations about it are stunted. One of the first essays I wrote for the _Problematic Activism_ book was about how [talking about social justice dogma is anti-viral](https://www.samk.blog/talking-about-social-justice-dogma-is-anti-viral/).  I still believe this to be the case, in both senses of the phrase: 
+Social justice dogma itself is spreading like a virus, while any conversations about it directly -- why it might be harmful, how we're getting in our own way -- are stunted. One of the first essays I wrote for the _Problematic Activism_ book was about how [talking about social justice dogma is anti-viral](https://www.samk.blog/talking-about-social-justice-dogma-is-anti-viral/).  I still believe this to be the case, in both senses of the phrase: 
 
-It's hard to start a conversation about dogma, that's true. It's also true that as soon as you do, you take away some of its power. 
+It's hard to start a conversation about dogma, that's true. It's also true that as soon as you do, you take away some of its power. In my experience so far, talking openly about it, thoughtfully, is enough to unravel it.
 
 Conversation got us into this. It has the power to get us out.
