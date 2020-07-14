@@ -43,7 +43,7 @@
           <img style="width: 100%; max-width: 720px; height: auto; display: block;" src="{{ $large.Permalink }}" alt="{{ $img.Title }}" />
           {{ end }}
 			{{ end -}}
-      </a></p><hr/>{{ .Content }}{{ end }}{{ `]]>` | safeHTML }}
+      </a></p>{{ .Content }}{{ end }}{{ `]]>` | safeHTML }}
       </description>
     </item>
     {{ end }}
