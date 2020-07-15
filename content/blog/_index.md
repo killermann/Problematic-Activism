@@ -1,5 +1,6 @@
 ---
 title: Blog
+seo_title: The Problematic Activism Blog
 description: 'Social justice activism gone awry, in real-time — from "wokeism" to "cancel culture" to "social justice dogma" — and what we can do instead.'
 ---
 
