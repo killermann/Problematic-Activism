@@ -21,7 +21,7 @@ If that's the kind of ride you're here for, buckle up. This is going to be bumpy
 
 A bunch of fancy people (from J.K. Rowling to Noam Chomsky to Garry Kasparov) signed an open letter in Harper's. It was called ["A Letter on Justice and Open Debate"](https://harpers.org/a-letter-on-justice-and-open-debate/) and has been widely discussed as being about Cancel Culture. 
 
-Though I'll point out that the authors, led by Thomas Chatterton-Williams, were careful not to actually use that phrase. Probably because they realized how empty it's become of utility. 
+Though I'll point out that the authors, led by Thomas Chatterton Williams, were careful not to actually use that phrase. Probably because they realized how empty it's become of utility. 
 
 {{< figure src="Screen Shot 2020-07-16 at 1.49.19 PM.png" alt="Screenshot of the letter with the following passage: The free exchange of information and ideas, the lifeblood of a liberal society, is daily becoming more constricted. While we have come to expect this on the radical right, censoriousness is also spreading more widely in our culture: an intolerance of opposing views, a vogue for public shaming and ostracism, and the tendency to dissolve complex policy issues in a blinding moral certainty. We uphold the value of robust and even caustic counter-speech from all quarters. But it is now all too common to hear calls for swift and severe retribution in response to perceived transgressions of" caption="I guess Culture of Censorious Retribution doesn't have the same ring to it, but I'd vote for that renaming." attr="Harper's" attrlink="https://harpers.org/a-letter-on-justice-and-open-debate/" >}}
 
@@ -39,9 +39,9 @@ Most of the popular takes against the letter from the social justice community w
 
 For example, many denounced the letter by way of identifying the writers as privileged and white and men.
 
-{{< figure src="Screen Shot 2020-07-16 at 2.15.38 PM.png" alt="Screenshot of tweet reading: 'The Letter' was shaped/spearheaded from conversations by four privileged white men. Apparently they felt entitled to really weigh in on racism, diversity and inclusion. That says it all." caption="'Four privileged white men' is a weird way to say 'Chatterton-Williams'">}}
+{{< figure src="Screen Shot 2020-07-16 at 2.15.38 PM.png" alt="Screenshot of tweet reading: 'The Letter' was shaped/spearheaded from conversations by four privileged white men. Apparently they felt entitled to really weigh in on racism, diversity and inclusion. That says it all." caption="'Four privileged white men' is a weird way to say 'Chatterton Williams'">}}
 
-With [Chatterton-Williams](https://twitter.com/thomaschattwill) (who is Black) spearheading the thing, and lots (most?) of signers who aren't men and aren't white, this take is basically White-Washing/erasure, but _in the name_ of social justice. Not a good look. It's moments like this that inspired my essay ["Sockpuppets and the Vox Populi of Identity."](https://www.samk.blog/sockpuppets-vox-populi/)
+With [Chatterton Williams](https://twitter.com/thomaschattwill) (who is Black) spearheading the thing, and lots (most?) of signers who aren't men and aren't white, this take is basically White-Washing/erasure, but _in the name_ of social justice. Not a good look. It's moments like this that inspired my essay ["Sockpuppets and the Vox Populi of Identity."](https://www.samk.blog/sockpuppets-vox-populi/)
 
 Thankfully, willfully ignoring all the minoritized voices supporting the letter to attack it's whiteness and maleness it wasn't the _only_ response. 
 
