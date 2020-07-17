@@ -11,6 +11,13 @@ summaryLength = 40
     [markup.goldmark.renderer]
       unsafe = true
 
+[Author]
+	name = "Sam Killermann"
+	twitter = "killermann"
+	facebook = "samkillermann"
+	instagram = "killermann"
+	website = "https://www.samkillermann.com"
+
 [params]
 	email_list_url = "https://app.convertkit.com/landing_pages/402557?v=7"
 	seo_title = "Problematic Activism by Sam Killermann: Transitioning from Disposability & Dogma to Living Social Justice"

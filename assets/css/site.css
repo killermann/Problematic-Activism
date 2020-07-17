@@ -159,7 +159,7 @@ html {
 }
 
 .markdown li + li {
-  @apply mt-1;
+  @apply mt-4;
 }
 
 .markdown li > p + p {
@@ -282,4 +282,27 @@ html {
 
 .markdown td {
   @apply border py-1 px-3;
+}
+
+.markdown figure {
+  @apply my-6; 
+}
+
+.markdown img {
+  @apply shadow-lg rounded;
+}
+
+.markdown figcaption {
+  @apply block text-xs font-sans mt-2 mb-4 leading-tight;
+}
+
+.markdown figcaption a {
+  display: inline-block;
+  opacity: .75;
+}
+
+.markdown figcaption a:before {
+  content: "Source: ";
+  margin-right: .2em;
+  display: inline-block;
 }

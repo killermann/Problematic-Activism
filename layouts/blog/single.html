@@ -8,7 +8,7 @@
 	<div class="max-w-2xl mx-auto lg:ml-0 xl:mr-8">
 		<header class="px-6">
       <nav class="breadcrumbs uppercase text-sm font-black text-red-500 mb-3 tracking-widest leading-none" aria-label="Breadcrumb">
-          <a href="{{ .Site.BaseURL }}/blog/#the-blog" title="Blog">blog</a>
+          <a href="{{ .Site.BaseURL }}blog/#the-blog" title="Blog">blog</a>
           {{- with .Params.categories }} / <a class="primary-category" href="{{ `/categories/` }}{{ . | urlize }}/" title="">{{ . }}</a>{{ end }}
       </nav>
 			<h1 class="font-black text-5xl leading-title alt-font mb-4">
@@ -36,7 +36,7 @@
 				{{ if $img }}
 					{{ $big := $img.Resize "1400x"}}
 					{{ $small := $img.Resize "600x"}}
-					<img class="rounded-sm" srcset="{{ $small.RelPermalink }} 500w, {{ $big.RelPermalink }} 1200w" alt="{{ $img.Title }}" />
+					<img class="rounded-sm shadow-lg" srcset="{{ $small.RelPermalink }} 500w, {{ $big.RelPermalink }} 1200w" alt="{{ $img.Title }}" />
 				{{ else }}
 				<hr/>
 				{{ end }}
@@ -57,12 +57,17 @@
 			</div>			
 			{{ if ( or .NextInSection .PrevInSection) }}
 			<hr/>
-			<div class="flex items-center justify-between">
-				{{ if .NextInSection }}
-				<a class="alt-font uppercase text-sm tracking-widest" href="{{.NextInSection.Permalink}}#content">&larr; Previous Chapter</a>
-				{{ else }}&nbsp;
-				{{ end }}{{ if .PrevInSection }}
-				<a class="alt-font uppercase text-sm tracking-widest" href="{{.PrevInSection.Permalink}}#content">Next Chapter &rarr;</a>
+			<div class="flex mt-6 items-center justify-between">
+				{{ if .PrevInSection }}
+				<a class="alt-font text-sm" href="{{.PrevInSection.Permalink}}#content">
+					<span class="text-xs uppercase tracking-widest opacity-75">&larr; Previous Post</span>
+					<h3>{{ .PrevInSection.Title }}</h3>
+				</a>
+				{{ end }}&nbsp;{{ if .NextInSection }}
+				<a class="alt-font text-sm" href="{{.NextInSection.Permalink}}#content">
+					<span class="text-xs uppercase tracking-widest opacity-75">Next Post &rarr;</span>
+					<h3>{{ .NextInSection.Title }}</h3>
+				</a>
 				{{ end }}
 			</div>
 			{{ end }}

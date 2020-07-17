@@ -985,7 +985,7 @@ html {
 }
 
 .markdown li + li {
-  margin-top: 0.25rem;
+  margin-top: 1rem;
 }
 
 .markdown li > p + p {
@@ -1191,6 +1191,36 @@ html {
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.markdown figure {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown img {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+}
+
+.markdown figcaption {
+  display: block;
+  font-size: 0.75rem;
+  font-family: sofia-pro, sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.markdown figcaption a {
+  display: inline-block;
+  opacity: .75;
+}
+
+.markdown figcaption a:before {
+  content: "Source: ";
+  margin-right: .2em;
+  display: inline-block;
 }
 
 /* Tailwind's utility classes - generated based on config file */

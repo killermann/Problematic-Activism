@@ -25,33 +25,39 @@
     "name" : "{{ if .Params.seo_title }}{{ .Params.seo_title }}{{ else }}{{ .Title }}{{ end }}",
     "headline" : "{{ .Title }}",
     "image" : "{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else}}{{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}{{ with $img }}{{ $img.Permalink }}{{ end }}{{ end }}",
-    "description" : "{{ if .Description }}{{ .Description }}{{ else if .Params.excerpt }}{{ .Params.excerpt }}{{ else if .IsPage}}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+    "description" : {{ if .Description }}{{ .Description | safeJS | htmlUnescape | plainify }}{{ else if .Params.excerpt }}{{ .Params.excerpt | safeJS | htmlUnescape | plainify }}{{ else if .IsPage}}{{ .Summary | safeJS | htmlUnescape | plainify }}{{ else }}{{ .Site.Params.description | safeJS | htmlUnescape | plainify }}{{ end }},
     "inLanguage" : "en-US",
     "author": {
         "@type": "Person",
-        "@id": "{{ range .Site.Author }}{{ . }}{{ end }}"
+        "@id": "{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Author.name }}{{ end }}",
+        "sameAs": [{{- with .Site.Author.twitter -}}"https://www.twitter.com/{{ . }}", {{ end }}{{- with .Site.Author.facebook }}"https://www.facebook.com/{{ . }}", {{ end }}{{- with .Site.Author.instagram }}"https://www.instagram.com/{{ . }}", {{ end }}{{- with .Site.Author.youtube }}"https://www.youtube.com/{{ . }}", {{ end }}{{- with .Site.Author.website }}"{{ . }}"{{ end }}],
+        "name": "{{ .Site.Author.name }}"
     },
     "creator": {
         "@type": "Person",
-        "@id": "{{ range .Site.Author }}{{ . }}{{ end }}"
+        "@id": "{{ .Site.Author.name }}",
+        "name": "{{ .Site.Author.name }}"
     },
     "publisher": {
         "@type": "Person",
-        "@id": "{{ range .Site.Author }}{{ . }}{{ end }}"
+        "@id": "{{ .Site.Author.name }}",
+        "name": "{{ .Site.Author.name }}"
     },
     "accountablePerson": {
         "@type": "Person",
-        "@id": "{{ range .Site.Author }}{{ . }}{{ end }}"
+        "@id": "{{ .Site.Author.name }}",
+        "name": "{{ .Site.Author.name }}"
     },
     "copyrightHolder": {
         "@type": "Person",
-        "@id": "{{ range .Site.Author }}{{ . }}{{ end }}"
+        "@id": "{{ .Site.Author.name }}",
+        "name": "{{ .Site.Author.name }}"
     },
-    "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "datePublished": "{{ .Date }}",
-    "dateModified" : "{{ .Page.Lastmod }}",
+    {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+    "datePublished": {{ (.Date.Format $ISO8601) }},
+    "dateModified" : {{ (.Lastmod.Format $ISO8601) | default (.Date.Format $ISO8601) }},
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
-    "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}],
+    "keywords" : [{{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}]
 }{{ end }}
 </script>
