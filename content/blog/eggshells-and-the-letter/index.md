@@ -1,5 +1,5 @@
 ---
-title: "Eggshells and \"The Letter\""
+title: "#1 – Eggshells and \"The Letter\""
 date: 2020-07-16T12:47:05+0000
 description: "A bunch of fancy people wrote a letter about cancel culture. There was backlash from Social Justice Land. It focused on the wrong people."
 author: Sam Killermann
