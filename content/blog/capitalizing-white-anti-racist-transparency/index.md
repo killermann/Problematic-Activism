@@ -3,7 +3,7 @@ title: "#2 — Capitalizing White Antiracist Transparency"
 date: 2020-07-21T07:47:05+0000
 description: "The AP says not to capitalize \"white.\"  A group of activists are demanding white antiracist speakers disclose their financials. How could this go wrong?"
 author: Sam Killermann
-categories: "Lost the Plot"
+categories: "Power Inverse"
 tags: ["Power Inverse", "Pay Them Paradox"]
 ---
 
