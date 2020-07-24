@@ -7,7 +7,7 @@ categories: "Keep Out"
 tags: ["Lost the Plot", "Sockpuppeting Vox Populi", "Hearts & Minds"]
 ---
 
-In what I hope will be a masterful feat of self-awareness and self-effacing irony, I'm going to critique someone else's critique, largely to make the point that the critique wasn't needed. And! Somehow! That I believe _my doing it now_ will help.
+In what I hope will be a masterful feat of self-awareness and self-effacing irony, I'm going to critique someone else's critique, largely to make the point that the critique wasn't helpful. And! Somehow! That I believe _my doing it now_ will help.
 
 Here goes.
 
@@ -47,6 +47,8 @@ Here's the text of the criticism of the comic:
 > - Eliminate militarized weapons from police departments and stop funding these weapons.
 > - Eliminate police funding for internal oversight and move oversight and accountability outside the police force and into the hands of civilians with subpoena power.
 > And ultimately while we have this moment let’s have a discussion about abolishing the police force, not simply defunding, not simply reimagining, ABOLISHING.
+
+I should say that I don't disagree with pretty much anything Ted says there. It's mostly spot on. I just disagree with the saying it, here, in response to this comic, and the idea that this is somehow helpful or necessary.
 
 ## Everything is Wrong with What is Wrong
 
